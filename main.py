@@ -15,6 +15,9 @@ def extract_data_and_find_highest(input_data):
 
     return numbers, alphabets, highest_alphabet
 
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
 
 @app.route("/bfhl", methods=["POST"])
 def post_endpoint():
